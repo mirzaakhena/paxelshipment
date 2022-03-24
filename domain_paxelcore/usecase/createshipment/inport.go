@@ -13,6 +13,7 @@ type Inport interface {
 
 // InportRequest is request payload to run the usecase
 type InportRequest struct {
+	InvoiceNumber string
 }
 
 // InportResponse is response payload after running the usecase

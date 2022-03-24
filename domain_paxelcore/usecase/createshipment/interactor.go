@@ -57,7 +57,7 @@ func (r *createShipmentInteractor) Execute(ctx context.Context, req InportReques
 			ZipCode:   "",
 		},
 		PaymentType:   "CRD",
-		InvoiceNumber: "ABC12345",
+		InvoiceNumber: req.InvoiceNumber,
 		Items: []entity.Item{
 			{
 				Code:      "SKU7823123",

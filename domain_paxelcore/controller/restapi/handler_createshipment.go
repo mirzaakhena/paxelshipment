@@ -35,6 +35,7 @@ func (r *Controller) createShipmentHandler(inputPort createshipment.Inport) gin.
 		//}
 
 		var req createshipment.InportRequest
+		req.InvoiceNumber = c.DefaultQuery("invoice", util.GenerateID(10))
 
 		r.Log.Info(ctx, util.MustJSON(req))
 
